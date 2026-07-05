@@ -1,19 +1,44 @@
-# Letterboxd Geographic Analyzer
+# Project Title
 
-A Python script that analyzes your exported Letterboxd data and categorizes every movie you've watched by its production country using the TMDB API.
-
-## Features
-
-- Bypasses Letterboxd's Pro-paywall for geographic statistics.
-- Fixes BOM (`utf-8-sig`) encoding issues native to Letterboxd CSV exports.
-- Secure execution: Prompts for API key at runtime to prevent accidental leaks.
-- Real-time fetching with API rate-limit protections.
+A precise, one-paragraph description of what this project does, why it exists, and the specific problem it solves. Do not use marketing fluff; state the objective reality of the code.
 
 ## Prerequisites
 
-1. Python 3.x installed.
-2. `requests` library installed:
-   ```bash
-   pip install requests
-   ```
-3. A free TMDB API Key (v3 auth).
+Before executing this code, ensure your system meets the following requirements:
+
+- [Language/Framework] (e.g., Python 3.10+)
+- Any required system-level dependencies
+
+## Installation and Setup
+
+Follow these exact steps to run the environment locally.
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Environment Variables:**
+    This project requires API keys to function.
+    - Create a file named `api.env` in the root directory.
+    - Add your keys in the following format:
+      ```text
+      MY_API_KEY=your_actual_key_here
+      ```
+    - **CRITICAL:** The `.gitignore` is configured to prevent `api.env` from being committed. Never bypass this rule.
+
+## Usage
+
+Execute the main script using the following command:
+
+```bash
+python main.py
+```
